@@ -1,0 +1,142 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+body {
+    max-height:100vh;
+    max-width:100%;
+    background-color: #ADEFD1FF;
+    color: #00203FFF;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.header {
+    display: flex;
+    align-self: center;
+    padding: 7px 15px;
+    min-width: 100%;
+    background-color: #9becc8dc;
+    height:80px;
+    box-shadow: 15px 0 2px #000000ae;
+}
+img {
+    height:60px;
+    width:60px;
+}
+h1{
+    margin:auto;
+    font-size:18px;
+    text-align:center;
+    line-height:25px;
+}
+.greet-quote {
+    margin:5% auto ;
+    text-align:center;
+    line-height: 60px;  
+    font-family: 'Tangerine', cursive;;
+}
+.content {
+    margin:auto;
+    padding:10px;
+    height:250px;
+    width:300px;
+    line-height:70px;
+    background-color:  #00203FFF;
+    border-radius:5px;
+    color: #ADEFD1FF;
+    text-align:center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family : 'Russo One', serif;
+    font-weight: lighter;
+}
+#temp {
+   float:right;
+   margin-right: 20px;  
+}
+.time{
+    font-size: 30px;
+}
+#period {
+   float:right;
+   margin-right: 20px;
+   font-size:20px;
+}
+#year {
+   float:right;
+   margin-right: 10px;
+}
+#greet {
+    animation:greet 5s linear 1s forwards; 
+    visibility: hidden;
+}
+#quote {
+    animation:quote 5s linear 1s forwards; 
+}  
+#day {
+    margin-left:-10px;
+}
+#month {
+    margin-left:-20px;
+}
+#datenum {
+    margin-left:10px;
+}
+@keyframes quote {
+    50% {transform:scale3d(0,1,0);}
+} 
+@keyframes greet {
+    0% {visibility: hidden;}
+    25% {visibility:visible;  transform: rotateY(20deg);}
+    50% {visibility:visible;  transform: rotateX(20deg);}
+    75%{visibility:visible;  transform: rotateY(20deg);}
+    100% {visibility:visible;}
+}
+/* MEDIA*/
+@media only screen and (min-width:600px) {
+    img {
+    height:70px;
+    width:70px;
+    }
+    h1 {
+    font-size:20px;
+    line-height:70px; 
+    word-spacing: 2px;
+    }
+    .greet-quote {
+    margin:2% auto ;
+    font-size: 22px; 
+    line-height: 65px;  
+    }
+    .content {
+    height:300px; 
+    width:400px;
+    line-height:90px;
+    font-size: 30px;  
+    }    
+    #period {
+    font-size:25px;
+    } 
+    .time {
+    font-size: 40px;
+    }
+}
+@media only screen and (min-width:992px) {
+    .greet-quote {
+    margin:1% auto ;
+    font-size: 28px; 
+    line-height: 68px;  
+    }
+    .greet-quote {
+    margin:1% auto ;
+    }
+}
+@media only screen and (min-width:1024px) {
+    h1 {
+        font-size:30px;
+        word-spacing: 5px;
+    }
+}
+
