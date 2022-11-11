@@ -79,7 +79,7 @@ h1{
     margin-left:-10px;
 }
 #month {
-    margin-left:-20px;
+    margin-left:-12px;
 }
 #datenum {
     margin-left:10px;
@@ -128,9 +128,6 @@ h1{
     margin:1% auto ;
     font-size: 28px; 
     line-height: 68px;  
-    }
-    .greet-quote {
-    margin:1% auto ;
     }
 }
 @media only screen and (min-width:1024px) {
